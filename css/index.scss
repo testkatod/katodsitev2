@@ -131,6 +131,7 @@ p {
     padding-bottom: 2em;
     margin-bottom: 5em;
 
+
     .counter {
         margin: 0;
         color:rgba(5, 170, 93, 1);
@@ -142,6 +143,8 @@ p {
     }
 
     .submenu-block {
+        backdrop-filter: blur(5px);
+        box-shadow: 5px 5px 10px rgb(90, 89, 89);
         width: 20%;
         padding: 1em;
         border-bottom: 1px solid rgba(5, 170, 93, 1);
@@ -149,7 +152,19 @@ p {
             background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
             transition: all 3s ease;
         }
+
+        h3 {
+            color: white;
+        }
     }
+}
+
+.big-header {
+    color: rgb(167, 167, 167);
+    font-size: 20em;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 10px 10px gray;
 }
 
 .products-header {
@@ -157,6 +172,14 @@ p {
     background-size: cover;
     background-position: bottom;
     backdrop-filter: blur(30px);
+
+    p {
+        width: 40%;
+    }
+
+    h1 {
+        font-weight: 400;
+    }
 }
 
 .header-block {
@@ -243,7 +266,7 @@ p {
         }
 
         .standards {
-            margin-top: -15em;
+            margin-top: -20em;
 
             .img {
                 background:linear-gradient(transparent 90%, rgba(255, 255, 255, 1.0) 95%), url(../img/mainblock_second.jpg);
@@ -254,7 +277,7 @@ p {
 
         .products {
 
-            margin-top: -20em;
+            margin-top: -23em;
             .img {
                 background:linear-gradient(transparent 90%, rgba(255, 255, 255, 1.0) 95%), url(../img/mainblock-third.jpg);
                 background-size: cover;
@@ -279,9 +302,6 @@ h1.header {
 .subheader-block {
     display: flex;
 
-    .left-col {
-        //width: 50%;
-    }
     .subheader {
         font-weight: 400;
         font-size: 1em;
@@ -291,13 +311,25 @@ h1.header {
 
 }
 
+.sub-header {
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0;
+    font-weight: 400;
+    display: inline-block;
+    border-bottom: 1px solid rgba(5, 170, 93, 1);
+}
+
 section.tubes {
   //  background-color: rgb(231, 231, 231); 
+
+    
 
     .wrapper {
         display: flex;
         place-content: space-between;
         padding: 5em 0;
+        padding-top: 0;
     
         .col {
             width: 30%;
@@ -311,12 +343,12 @@ section.tubes {
             background: rgb(225,241,68);
             background: linear-gradient(135deg, rgba(120, 124, 82, 0.5) 0%, rgba(252,69,69,0.5) 100%);
             backdrop-filter: blur(30px);
+            transition: 3s ease-in-out;
             box-shadow: 5px 5px 20px rgb(2, 2, 2);
 
             &:hover {
                 background: rgb(225,241,68);
                 background: linear-gradient(135deg, rgba(225,241,68,0.7) 0%, rgba(252,69,69,0.7) 100%);
-                transition: 3s;
             }
 
 
@@ -339,6 +371,7 @@ section.tubes {
             .card {
                 background: rgb(68,191,241);
                 background: linear-gradient(135deg, rgba(68,191,241,0.5) 0%, rgba(69,252,124,0.5) 100%);
+                transition: 3s ease-in-out;
 
                 &:hover {
                     background: rgb(68,191,241);
@@ -363,6 +396,32 @@ section.tubes {
 
 section.pmt {
 
+    
+
+    .header {
+        margin-bottom: 0;
+    }
+    .text-block {
+        display: flex;
+
+        .left-col {
+            width: 50%;
+            margin: auto 0;
+
+            p {
+                width: 80%;
+            }
+        }
+
+        .right-col {
+            width: 50%;
+            height: 400px;
+            background-image: url(../img/PMT.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
     .aviation {
         background: url(../img/aviation.jpg);
         background-size: cover;
@@ -370,21 +429,28 @@ section.pmt {
         height: 20em;
     }
 
+    .lidar {
+        height: 40em;
+        width: 30%;
+        background-image: url(../img/lasers-web_3536805_iStock_Terraxplorer.jpg);
+    }
+
     h3 {
         margin: 0;
         color:white;
-        font-size: 2em;
+        font-weight: 300;
+        font-size: 1.5em;
         backdrop-filter: blur(10px);
         background-color: rgba(59, 59, 59, 0.4);
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
+        transition: 2s;
 
         &:hover {
             height: 100%;
             text-align: center;
             margin: auto 0;
-            transition: all 5s;
         }
     }
 
@@ -393,7 +459,7 @@ section.pmt {
         display: flex;
 
         .applications {
-            width: 60%;
+            width: 70%;
         }
 
         .bg {

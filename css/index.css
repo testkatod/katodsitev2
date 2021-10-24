@@ -140,6 +140,10 @@ p {
 }
 
 .secondary-nav .submenu-block {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 5px 5px 10px #5a5959;
+          box-shadow: 5px 5px 10px #5a5959;
   width: 20%;
   padding: 1em;
   border-bottom: 1px solid #05aa5d;
@@ -152,6 +156,18 @@ p {
   transition: all 3s ease;
 }
 
+.secondary-nav .submenu-block h3 {
+  color: white;
+}
+
+.big-header {
+  color: #a7a7a7;
+  font-size: 20em;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 10px 10px gray;
+}
+
 .products-header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.6)), to(rgba(37, 37, 37, 0.6))), url(../img/Photo1_8.JPG);
   background: linear-gradient(rgba(37, 37, 37, 0.6), rgba(37, 37, 37, 0.6)), url(../img/Photo1_8.JPG);
@@ -159,6 +175,14 @@ p {
   background-position: bottom;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+}
+
+.products-header p {
+  width: 40%;
+}
+
+.products-header h1 {
+  font-weight: 400;
 }
 
 .header-block {
@@ -248,7 +272,7 @@ p {
 }
 
 .about-blocks .wrapper .standards {
-  margin-top: -15em;
+  margin-top: -20em;
 }
 
 .about-blocks .wrapper .standards .img {
@@ -259,7 +283,7 @@ p {
 }
 
 .about-blocks .wrapper .products {
-  margin-top: -20em;
+  margin-top: -23em;
 }
 
 .about-blocks .wrapper .products .img {
@@ -289,12 +313,22 @@ h1.header {
   width: 50%;
 }
 
+.sub-header {
+  font-size: 2em;
+  text-align: center;
+  margin: 2em 0;
+  font-weight: 400;
+  display: inline-block;
+  border-bottom: 1px solid #05aa5d;
+}
+
 section.tubes .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
   padding: 5em 0;
+  padding-top: 0;
 }
 
 section.tubes .wrapper .col {
@@ -310,6 +344,8 @@ section.tubes .wrapper .card {
   background: linear-gradient(135deg, rgba(120, 124, 82, 0.5) 0%, rgba(252, 69, 69, 0.5) 100%);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
   -webkit-box-shadow: 5px 5px 20px #020202;
           box-shadow: 5px 5px 20px #020202;
 }
@@ -317,8 +353,6 @@ section.tubes .wrapper .card {
 section.tubes .wrapper .card:hover {
   background: #e1f144;
   background: linear-gradient(135deg, rgba(225, 241, 68, 0.7) 0%, rgba(252, 69, 69, 0.7) 100%);
-  -webkit-transition: 3s;
-  transition: 3s;
 }
 
 section.tubes .wrapper .card img {
@@ -338,6 +372,8 @@ section.tubes .wrapper .card p {
 section.tubes .wrapper .third-gen .card {
   background: #44bff1;
   background: linear-gradient(135deg, rgba(68, 191, 241, 0.5) 0%, rgba(69, 252, 124, 0.5) 100%);
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
 }
 
 section.tubes .wrapper .third-gen .card:hover {
@@ -355,6 +391,33 @@ section.tubes .wrapper .custom .card:hover {
   background: linear-gradient(135deg, #f9ff00 0%, rgba(56, 189, 29, 0.7) 30%, rgba(48, 84, 146, 0.7) 54%, red 100%);
 }
 
+section.pmt .header {
+  margin-bottom: 0;
+}
+
+section.pmt .text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.pmt .text-block .left-col {
+  width: 50%;
+  margin: auto 0;
+}
+
+section.pmt .text-block .left-col p {
+  width: 80%;
+}
+
+section.pmt .text-block .right-col {
+  width: 50%;
+  height: 400px;
+  background-image: url(../img/PMT.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 section.pmt .aviation {
   background: url(../img/aviation.jpg);
   background-size: cover;
@@ -362,10 +425,17 @@ section.pmt .aviation {
   height: 20em;
 }
 
+section.pmt .lidar {
+  height: 40em;
+  width: 30%;
+  background-image: url(../img/lasers-web_3536805_iStock_Terraxplorer.jpg);
+}
+
 section.pmt h3 {
   margin: 0;
   color: white;
-  font-size: 2em;
+  font-weight: 300;
+  font-size: 1.5em;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: rgba(59, 59, 59, 0.4);
@@ -373,14 +443,14 @@ section.pmt h3 {
   padding: 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 section.pmt h3:hover {
   height: 100%;
   text-align: center;
   margin: auto 0;
-  -webkit-transition: all 5s;
-  transition: all 5s;
 }
 
 section.pmt .wrapper {
@@ -391,7 +461,7 @@ section.pmt .wrapper {
 }
 
 section.pmt .wrapper .applications {
-  width: 60%;
+  width: 70%;
 }
 
 section.pmt .wrapper .bg {
