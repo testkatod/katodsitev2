@@ -37,11 +37,11 @@
                         <div class="wrapper">
                             <div class="text-block">
                                 <h1 class='company-name'>КАТОД</h1>
-                                <p>Уникальное предприятие, экспортирующее продукцию по всему миру</p>
+                                <p class="slider-text">Уникальное предприятие, экспортирующее продукцию по всему миру</p>
                                 <a href="#" class="btn">Подробнее</a>
                             </div>
                             <div class="number">
-                                <p class="counter">01/<span>04</span> </p>
+                                <p class="counter slider-counter">01/<span>04</span> </p>
                             </div>
                         </div>
                     </div>
@@ -237,9 +237,20 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            submenu = document.querySelector('.tube-block');
+            submenu.addEventListener('click', function() {
+                background = document.querySelector('.slider-background');
+                background.style.background = "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/7474-1.jpg)";
+                document.querySelector('.slider-text').innerHTML = "Единственный в России серийный производитель электронно-оптических преобразователей 3 поколения с показателем FOM 2000 и выше";
+                document.querySelector('.slider-counter').innerHTML = "02/<span>04</span>";
+            })
+        })
+        document.addEventListener('DOMContentLoaded', function() {
             submenu = document.querySelector('.main-block');
             submenu.addEventListener('click', function() {
-                document.querySelector('.slider-background').style.background = 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(59, 59, 59, 0.6)), url(../img/7474-1.jpg);'
+                background = document.querySelector('.slider-background');
+                background.style.background = "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg)";
+
             })
         })
     </script>
