@@ -225,7 +225,7 @@
                         <h3>Охрана <br> правопорядка</h3>
                     </div>
                     <div class="col hunting">
-                        <h3>Охота и спорт</h3>
+                        <h3>Охота <br> и спорт</h3>
                     </div>
                 </div>
                 <div class="text-block">
@@ -234,5 +234,14 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            submenu = document.querySelector('.main-block');
+            submenu.addEventListener('click', function() {
+                document.querySelector('.slider-background').style.background = 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(59, 59, 59, 0.6)), url(../img/7474-1.jpg);'
+            })
+        })
+    </script>
 </body>
 </html>
