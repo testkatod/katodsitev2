@@ -51,7 +51,7 @@ p {
 }
 
 .slider-background {
-    background: linear-gradient(rgba(59, 59, 59, 0.6), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    // height: 100vh;
@@ -496,7 +496,9 @@ section.pmt {
             color: white;
             font-size: 2em;
             text-align: center;
-            margin: 10em 0;
+            position: absolute;
+            bottom: 0;
+            margin: 0 3em;
         }
 
         p {
@@ -510,17 +512,20 @@ section.pmt {
 
         .col {
             width: 33%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/observe.jpg);
+            background: linear-gradient(rgba(100, 100, 100, 0), rgba(100, 100, 100, 0)), url(../img/observe.jpg);
             background-size: cover;
             background-position: center;
             height: 700px;
             margin: 0 0.05em;
+            position: relative;
         }
 
         .law {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sequre.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/sequre.jpg);
             transition: 1s ease;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
             &:hover {
                 width: 50%;
@@ -537,7 +542,7 @@ section.pmt {
         }
 
         .hunting {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hunting.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/hunting.jpg);
             background-size: cover;
             background-position: center;
             transition: 1s ease;

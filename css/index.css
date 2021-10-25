@@ -47,8 +47,8 @@ p {
 }
 
 .slider-background {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 59, 0.6)), to(rgba(59, 59, 59, 0.6))), url(../img/slider1-min.jpg);
-  background: linear-gradient(rgba(59, 59, 59, 0.6), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(59, 59, 59, 0.6))), url(../img/slider1-min.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -498,7 +498,9 @@ section.pmt .wrapper .space {
   color: white;
   font-size: 2em;
   text-align: center;
-  margin: 10em 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0 3em;
 }
 
 .nvd .wrapper p {
@@ -514,20 +516,23 @@ section.pmt .wrapper .space {
 
 .nvd .wrapper .col {
   width: 33%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/observe.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/observe.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0)), to(rgba(100, 100, 100, 0))), url(../img/observe.jpg);
+  background: linear-gradient(rgba(100, 100, 100, 0), rgba(100, 100, 100, 0)), url(../img/observe.jpg);
   background-size: cover;
   background-position: center;
   height: 700px;
   margin: 0 0.05em;
+  position: relative;
 }
 
 .nvd .wrapper .law {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/sequre.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sequre.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../img/sequre.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/sequre.jpg);
   -webkit-transition: 1s ease;
   transition: 1s ease;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nvd .wrapper .law:hover {
@@ -546,8 +551,8 @@ section.pmt .wrapper .space {
 }
 
 .nvd .wrapper .hunting {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/hunting.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hunting.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../img/hunting.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/hunting.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: 1s ease;
