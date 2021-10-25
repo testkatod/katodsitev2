@@ -488,3 +488,68 @@ section.pmt {
     }
 }
 
+.nvd {
+    .wrapper {
+        display: flex;
+
+        h3 {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            margin: 10em 0;
+        }
+
+        p {
+            padding: 0 2em;
+        }
+
+        .cols {
+            display: flex;
+            width: 100%;
+        }
+
+        .col {
+            width: 33%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/observe.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            margin: 0 0.05em;
+        }
+
+        .law {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sequre.jpg);
+            transition: 1s ease;
+            background-position: center;
+
+            &:hover {
+                width: 50%;
+            }
+        }
+
+        .surveillance {
+            transition: 1s ease;
+
+            &:hover {
+                width: 50%;
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        .hunting {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hunting.jpg);
+            background-size: cover;
+            background-position: center;
+            transition: 1s ease;
+
+            &:hover {
+                width: 50%;
+            }
+        }
+
+        .text-block {
+            width: 40%;
+            display: none;
+        }
+    }
+}

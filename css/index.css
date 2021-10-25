@@ -487,4 +487,79 @@ section.pmt .wrapper .space {
   width: 50%;
   height: 20em;
 }
+
+.nvd .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nvd .wrapper h3 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin: 10em 0;
+}
+
+.nvd .wrapper p {
+  padding: 0 2em;
+}
+
+.nvd .wrapper .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.nvd .wrapper .col {
+  width: 33%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/observe.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/observe.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  margin: 0 0.05em;
+}
+
+.nvd .wrapper .law {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/sequre.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sequre.jpg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  background-position: center;
+}
+
+.nvd .wrapper .law:hover {
+  width: 50%;
+}
+
+.nvd .wrapper .surveillance {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.nvd .wrapper .surveillance:hover {
+  width: 50%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.nvd .wrapper .hunting {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/hunting.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hunting.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.nvd .wrapper .hunting:hover {
+  width: 50%;
+}
+
+.nvd .wrapper .text-block {
+  width: 40%;
+  display: none;
+}
 /*# sourceMappingURL=index.css.map */
