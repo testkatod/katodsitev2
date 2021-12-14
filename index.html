@@ -4,255 +4,647 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css?ver1">
-    <title>Prototype</title>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Document</title>
 </head>
 <body>
-    <section class="main-slider">
-        <div class="slider-background">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="wrapper">
-                        <div class="logo">
-                            <img src="img/logo-katod.png" class='logo' alt="">
-                        </div>
-                        <ul class="primary-nav">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Работа в компании</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                        <div class="language-block">
-                            <div class="wrapper">
-                                <img src="img/language_white_48dp.svg" class="icon" alt="">
-                                <p class="language">EN</p>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="slider">
-                    <div class="hero">
-                        <div class="wrapper">
-                            <div class="text-block">
-                                <h1 class='company-name'>КАТОД</h1>
-                                <p class="slider-text">Уникальное предприятие, экспортирующее продукцию по всему миру</p>
-                                <a href="#" class="btn">Подробнее</a>
-                            </div>
-                            <div class="number">
-                                <p class="counter slider-counter">01/<span>04</span> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="secondary-nav">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="submenu-block main-block">
-                            <p class="counter">01</p>
-                            <h3>Общая</h3>
-                        </div>
-                        <div class="submenu-block tube-block">
-                            <p class="counter">02</p>
-                            <h3>Электронно-оптичекие преобразователи</h3>
-                        </div>
-                        <div class="submenu-block nvd-block">
-                            <p class="counter">03</p>
-                            <h3>Приборы ночного видения</h3>
-                        </div>
-                        <div class="submenu-block equip-block">
-                            <p class="counter">04</p>
-                            <h3>Вакуумные системы и оборудование</h3>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+<section class="home-screen">
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo-katod.png" alt="" class="logo">
+            <ul class="primary-nav">
+                <li><a href="#">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Работа в компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="language-block">
+                <img src="img/outline_language_black_48dp.png" alt="" class="icon">
+                <h3 class="header language-selector">EN</h3>
+            </div>
         </div>
-    </section>
+    </div>
+    <div class="background-wrapper">
+        <div class="background bg-first active absolute animate__animated" data-index="0"></div>
+        <div class="background bg-second animate__animated" data-index="1"></div>
+        <div class="background bg-third animate__animated" data-index="2"></div>
+        <div class="background bg-forth animate__animated" data-index="3"></div>
+    </div>
     
-    <section class="about-blocks">
-        <div class="container">
-            <div class="wrapper">
-                <div class="left-col">
-                    <p>С 1969 года</p>
-                    <h2>Производственное предприятие, располагающееся в Новосибирске</h2>
-                    <img class='icon' src="img/east_black_48dp.svg" alt="">
-                </div>
-                <div class="right-col">
-                    <div class="info-block">
-                        <div class="img">
-                        </div>
-                        <div class="text-block">
-                            <h3>Собственная научная база</h3>
-                            <p>Современное промышленное предприятие с собственной научной базой, тесно сотрудничающее в разработках и исследованиях с институтами СО РАН (ИФП СО РАН, КТИ ПН СО РАН и др.)</p>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="hero-header">
+            <h1 class="section-header">Уникальное <br> <span>предприятие</span> </h1>
+            <div class="controls">
+                <img src="img/outline_arrow_circle_left_white_48dp.png" alt="" class="icon-control left-control">
+                <img src="img/2outline_arrow_circle_right_white_48dp.png" alt="" class="icon-control right-control">
+            </div>
+        </div>
+        <div class="hero-body">
+            <div class="left-col">
+                <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+            </div>
+            <div class="right-col info-block">
+                <p class="text">экспортирующеее продукцию по всему миру</p>
+            </div>
+        </div>
+        <div class="secondary-nav">
+            <div class="block">
+                <p class="counter">01</p>
+                <h3 class="header">Научно-производственное предприятие</h3>
+            </div>
+            <div class="block">
+                <p class="counter">02</p>
+                <h3 class="header">Серийное производство ЭОП 3 поколения</h3>
+            </div>
+            <div class="block">
+                <p class="counter">03</p>
+                <h3 class="header">Приборы ночного видения собственной разработки</h3>
+            </div>
+            <div class="block">
+                <p class="counter">04</p>
+                <h3 class="header">Проектирование и производство вакуумных систем</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="wrapper">
+            <div class="col text-col"> 
+                <h1 class="counter">01</h1>
+                <div class="text-block">
+                    <h1 class="header">Научная база</h1>
+                    <p class="subheader">наука</p>
+                    <p class="text">
+                        Современное промышленное предприятие с собственной научной базой, тесно сотрудничающее в разработках и исследованиях с институтами СО РАН (ИФП СО РАН, КТИ ПН СО РАН и др.)
+                    </p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
                 </div>
             </div>
-
-            <div class="wrapper">
-                <div class="right-col standards">
-                    <div class="info-block">
-                        <div class="img">
-                        </div>
-                        <div class="text-block">
-                            <h3>Стандартизация</h3>
-                            <p>Продукция, соответствующая всем мировым стандартам. На предприятии действует Система Менеджмента Качества ГОСТ Р ИСО 9001-2015 (ISO 9001:2015)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-col">
-                    
-                </div>
+            <div class="col img-col">
+                <div class="img"></div>
             </div>
-
-            <div class="wrapper">
-                <div class="right-col">
-                    
-                </div>
-                <div class="right-col products">
-                    <div class="info-block">
-                        <div class="img">
-                        </div>
-                        <div class="text-block">
-                            <h3>Продукция</h3>
-                            <p>Более 380 конструктивных модификаций электронно-оптических преобразователей 2+ и 3-го поколения с применением 10 типов фотокатодов. Производство более 80 типов ПНВ.</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="wrapper standard-wrapper">
+            <div class="col img-col">
+                <div class="img"></div>
+            </div>
+            <div class="col text-col"> 
+                <h1 class="counter">02</h1>
+                <div class="text-block">
+                    <h1 class="header">Стандарт</h1>
+                    <p class="subheader">стандартизация</p>
+                    <p class="text">
+                        Продукция, соответствующая всем мировым стандартам. На предприятии действует Система Менеджмента Качества ГОСТ Р ИСО 9001-2015 (ISO 9001:2015)
+                    </p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="products-header">
-        <div class="container">
-            <div class="header-block">
-                <h1>Продукция</h1>
-                <p>представлена электро-вакуумными системами, включая электронно-оптические преобразователи и фотоэлектронные умножители, приборами ночного видения на базе собственных электронно-оптических преобразователей, а также ваккумным оборудованием</p>
+        <div class="wrapper products-wrapper">
+            <div class="col text-col"> 
+                <h1 class="counter">03</h1>
+                <div class="text-block">
+                    <h1 class="header">Продукция</h1>
+                    <p class="subheader">номенклатура</p>
+                    <p class="text">
+                        Более 380 конструктивных модификаций электронно-оптических преобразователей 2+ и 3-го поколения с применением 10 типов фотокатодов. Производство более 80 типов ПНВ.
+                    </p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="col img-col">
+                <div class="img"></div>
             </div>
         </div>
-    </section>
-    <section class="tubes">
-        <div class="container">
-            <h1 class='header'>Электронно-оптические <br>преобразователи</h1>
-            <div class="subheader-block">
-                <div class="left-col"></div>
-                <p class="subheader">Электронно-оптические преобразователи предназначены для усиления слабых световых потоков излучения в пассивных и пассивно-активных приборах ночного видения. В зависимости от требуемых параметров, цели применения и прибора применения Катод готов предложить следующие варианты фотокатода, включая как традиционные 2+ и 3 поколения, а также кастомное решение для уникальных задач</p>
+    </div>
+</section>
+<!-- <section class="products">
+    <div class="container">
+        <h1 class="section-header">Продукция</h1>
+        <div class="text-block">
+                <p class="text">представлена электро-вакуумными системами, включая электронно-оптические преобразователи и фотоэлектронные умножители, приборами ночного видения, а также ваккумным оборудованием</p>
+                <a href="#" class="btn">Каталог <img src="img/south_east_white_48dp.svg" alt=""></a>
             </div>
-            <h2 class="sub-header">Категории</h2>
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="wrapper-blocks">
+                <div class="block tubes">
+                    <h3>Электронно-оптические преобразователи</h3>
+                </div>
+                <div class="block nvd">
+                    <h3>Приборы ночного видения</h3>
+                </div>
+                <div class="block pmt">
+                    <h3>Фотоэлектронные умножители</h3>
+                </div>
+                <div class="block equip">
+                    <h3>Ваккумное оборудование</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="new_tube">
+    <div class="container">
+        <div class="background-wrapper-section">
+            <div class="background-line"></div>
+            <div class="background-image"></div>
+        </div>
+        <div class="header-description-block">
+
+            <h2 class="section_header">Каталог <br> приборов и оборудования</h2>
+            <div class="subwrapper">
+                <a href="#" class="btn">Каталог <img src="img/south_east_white_48dp.svg" alt=""></a>
+                <p class="text">представлен электро-вакуумными системами, включая электронно-оптические преобразователи и фотоэлектронные умножители, приборами ночного видения, а также ваккумным оборудованием</p>
+            </div>
+        </div>
+        <div class="absolute_block">
+           
+        </div>
+
+    </div>
+</section> -->
+
+<section class="subcatalog-header">
+    <div class="background-for-float-block"></div>
+    <div class="container">
+        
+        <div class="float-block">
+            <h2 class="subcatalog__header">Продукция</h2>
+            <p class="subcatalog__text">представленa электро-вакуумными системами, включая электронно-оптические преобразователи и фотоэлектронные умножители, приборами ночного видения, а также ваккумным оборудованием</p>
+            <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+        </div>
+    </div>
+
+</section>
+
+<section class="subcatalog">
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-blocks">
+                <div class="block tubes">
+                    <h3>Электронно-оптические преобразователи</h3>
+                    <img src="img/outline_arrow_downward_black_48dp.png" alt="" class="arrow-down">
+                </div>
+                <div class="block nvd">
+                    <h3>Приборы ночного видения</h3>
+                    <img src="img/outline_arrow_downward_black_48dp.png" alt="" class="arrow-down">
+                </div>
+                <div class="block pmt">
+                    <h3>Фотоэлектронные умножители</h3>
+                    <img src="img/outline_arrow_downward_black_48dp.png" alt="" class="arrow-down">
+                </div>
+                <div class="block equip">
+                    <h3>Ваккумное оборудование</h3>
+                    <img src="img/outline_arrow_downward_black_48dp.png" alt="" class="arrow-down">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="items-block items-block_tube">
+    <div class="items-block__background"></div>
+    <div class="container">
+        <div class="header-block">
+            <h1 class="header-block__header header-block__header_first-line">Электронно-оптические</h1>
+            <h1 class="header-block__header header-block__header_second-line">преобразователи</h1>
+        </div>
+        <div class="description-block">
+            <p class="description-text">предназначены для <span class="description-text__span_cursiv">усиления</span>  слабых световых потоков излучения в пассивных и активно-пассивных <span class="description-text__span_green">приборах ночного видения</span> </p>
+            <a href="#" class="button">Каталог</a>
+        </div>
+        <div class="body-block body-block_flex">
+            <div class="body-block__item body-block__item_background">
+                <div class="body-block__item__inner-block">
+                    <img src="img/EPM112-00-22-1-min.png" alt="" class="body-block__item__inner-block__image">
+                    <img src="img/outline_south_east_white_48dp.png" alt="" class="body-block__item__inner-block__image_arrow">
+                </div>
+                <h3 class="body-block__header">2+ поколение</h3>
+                <p class="body-block__text">S-25</p>
+            </div> 
+            <div class="body-block__item body-block__item_border body-block__item_background">
+                <div class="body-block__item__inner-block body-block__item__inner-block_third-gen">
+                    <img src="img/EPM112-00-22-1.png" alt="" class="body-block__item__inner-block__image">
+                    <img src="img/outline_south_east_white_48dp.png" alt="" class="body-block__item__inner-block__image_arrow">
+                </div>
+                <h3 class="body-block__header">3 поколение</h3>
+                <p class="body-block__text">GaAs</p>
+            </div> 
+            <div class="body-block__item body-block__item_background">
+                <div class="body-block__item__inner-block body-block__item__inner-block_custom">
+                    <img src="img/EPM112-00-22-1-min.png" alt="" class="body-block__item__inner-block__image">
+                    <img src="img/outline_south_east_white_48dp.png" alt="" class="body-block__item__inner-block__image_arrow">
+                </div>
+                <h3 class="body-block__header">Индивидуальное <br> решение</h3>
+                <p class="body-block__text">на основе уникального <br> фотокатода</p>
+            </div> 
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="new_tube">
+    <div class="container">
+        <div class="background-wrapper-section">
+            <div class="background-line"></div>
+            <div class="background-image"></div>
+        </div>
+        <div class="header-description-block">
+            <p class="little_header">продукция</p>
+            <h2 class="section_header">Электронно-оптические преобразователи</h2>
+            <div class="subwrapper">
+                <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+                <p class="text">Предназначены для усиления слабых световых потоков излучения в приборах ночного видения</p>
+            </div>
+        </div>
+        <div class="absolute_block">
+            <p class="little_header">поколение</p>
+            <div class="generations">
+                <h3 class="big_figure">2+</h3>
+                <h3 class="big_figure genthree">3</h3>
+            </div>
+
+            <p class="button_text">Подробнее о технических характеристиках</p>
+        </div>
+
+    </div>
+</section> -->
+
+
+<!-- <section class="new_tube new_pmt">
+    <div class="container">
+        <div class="background-wrapper-section">
+            <div class="background-line"></div>
+            <div class="background-image"></div>
+        </div>
+        <div class="header-description-block">
+            <p class="little_header">продукция</p>
+            <h2 class="section_header">Фотоэлектронные умножители</h2>
+            <div class="subwrapper">
+                <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+                <p class="text">Специальная технология производства ФЭУ дает возможность выпуска ЭОП различных модификаций и исполнений в зависимости от конкретного применения</p>
+            </div>
+        </div>
+        <div class="absolute_block">
+            <p class="little_header">поколение</p>
+            <div class="generations">
+                <h3 class="big_figure">2+</h3>
+                <h3 class="big_figure genthree">3</h3>
+            </div>
+
+            <p class="button_text">Подробнее о технических характеристиках</p>
+        </div>
+
+    </div>
+</section> -->
+
+<section class="item-block-new">
+    <div class="container">
+        <div class="item-block-new__wrapper">
+            <div class="text-col">
+                <h3 class="text-col__header text-col__header_lines">Электронно-оптичeские преобразователи</h3>
+                <p class="text-col__text">Электронно-оптические преобразователи предназначены для усиления слабых световых потоков излучения в пассивных и пассивно-активных приборах ночного видения</p>
+                <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+            </div>
+            <div class="image-col image-col_tube">
+                <div class="image-col__vertical-line image-col__vertical-line_right">
+                    <p class="image-col__little-header">поколения</p>
+                    <p class="big-figure big-figure_second">2+</p>
+                    <p class="big-figure big-figure_third">3</p>
+                    <a href="#" class="image-col__text">подробнее о технических характеристиках</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="item-block-new">
+    <div class="container">
+        <div class="item-block-new__wrapper">
+            
+            <div class="image-col image-col_nvd">
+                <div class="image-col__option image-col__option_surv">
+                    <h4 class="image-col_option__header">Наблюдение</h4>
+                </div>
+                <div class="image-col__option image-col__option_law">
+                    <h4 class="image-col_option__header">Охрана правопорядка</h4>
+                </div>
+                <div class="image-col__option image-col__option_hunt">
+                    <h4 class="image-col_option__header">Охота и спорт</h4>
+                </div>
+            </div>
+
+            <div class="text-col text-col_left text-col_relative">
+                <h3 class="text-col__header text-col_left text-col__header_wide text-col__header_lines_right">Приборы ночного видения</h3>
+                <p class="text-col__text text-col_left text-col__text_padding">Широкий спектр приборов ночного видения включает приборы для наблюдения и прицеливания, патрулирования, навигации, а также специальных операций</p>
+                <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="item-block-new">
+    <div class="container">
+        <div class="item-block-new__wrapper">
+            <div class="text-col">
+                <h3 class="text-col__header text-col__header_lines">Фотоэлектронные умножители</h3>
+                <p class="text-col__text">Электровакуумные приборы для применения в космической, авиационной промышленности, а также в научных исследованиях для регистрации слабых сигналов</p>
+                <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+            </div>
+            <div class="image-col image-col_tube">
+                <div class="image-col__vertical-line image-col__vertical-line_right">
+                    <p class="image-col__little-header">применение</p>
+                    <div class="image-col__vertical-line__application image-col__vertical-line__application_right">
+                        <img src="img/icons8-aviation — копия.png" alt="" class="application__icon">
+                        <p class="application__header">Авиация</p>
+                    </div>
+                    <div class="image-col__vertical-line__application image-col__vertical-line__application_left">
+                        <img src="img/icons8-science-64 — копия.png" alt="" class="application__icon">
+                        <p class="application__header">Наука</p>
+                    </div>
+                    <div class="image-col__vertical-line__application image-col__vertical-line__application_right">
+                        <img src="img/icons8-satellite-60 — копия.png" alt="" class="application__icon">
+                        <p class="application__header">Космос</p>
+                    </div>
+                    <div class="image-col__vertical-line__application image-col__vertical-line__application_left">
+                        <img src="img/icons8-laser — копия.png" alt="" class="application__icon">
+                        <p class="application__header">LIDAR</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="item-block-new">
+    <div class="container">
+        <div class="item-block-new__wrapper">
+            
+            <div class="image-col image-col_equip">
+                
+            </div>
+
+            <div class="text-col text-col_left text-col_relative">
+                <h3 class="text-col__header text-col_left text-col__header_wide text-col__header_lines_right">Вакуумное оборудование</h3>
+                <p class="text-col__text text-col_left text-col__text_padding">Проектирование и изготовление вакууумных и сверхвысоковакууных систем, компонентов, а также прочего промышленного оборудования под индивидуальные задачи</p>
+                <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="item-tube"> 
+    <div class="container">
+        <h1 class="section-subheader"> <span>Электронно-оптические</span>  <br> преобразователи</h1>
+        <div class="subheader-line"></div>
+        <div class="wrapper">
+            <div class="text-col">
+                <p class="text">Электронно-оптические преобразователи предназначены для усиления слабых световых потоков излучения в пассивных и пассивно-активных приборах ночного видения. В зависимости от требуемых параметров, цели применения и прибора применения Катод готов предложить следующие варианты фотокатода, включая как традиционные 2+ и 3 поколения, а также кастомное решение для уникальных задач</p>
+                <a href="#" class="btn">Каталог <img src="img/south_east_black_48dp.svg" alt=""></a>
+            </div>
+            <div class="blocks-wrapper">
                 <div class="col second-gen">
-                    <div class="card">
-                        <img src="img/EPM112-00-22-1-min.png" alt="">
-                        <div class="text-block">
-                            <h3>2+ поколение</h3>
-                            <p>S-25</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </div>
+                    <img class="img-tube" src="img/EPM112-00-22-1-min.png" alt="">
+                    <h3 class="block-header">2+ поколение</h3>
+                    <p class="text">S-25</p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
                 </div>
                 <div class="col third-gen">
-                    <div class="card">
-                        <img src="img/EPM112-00-22-1.png" alt="">
-                        <div class="text-block">
-                            <h3>3 поколение</h3>
-                            <p>GaAs</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </div>
+                    <img class="img-tube" src="img/EPM112-00-22-1-min.png" alt="">
+                    <h3 class="block-header">3 поколение</h3>
+                    <p class="text">GaAs</p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
                 </div>
                 <div class="col custom">
-                    <div class="card">
-                        <img src="img/EPM112-00-22-1-min.png" alt="">
-                        <div class="text-block">
-                            <h3>Индивидуальное решение</h3>
-                            <p>на уникальном фотокатоде</p>
-                            <a href="#" class="btn">Подробнее</a>
+                    <img class="img-tube" src="img/EPM112-00-22-1-min.png" alt="">
+                    <h3 class="block-header">Индивидуальное решение</h3>
+                    <p class="text">на основе уникального фотокатода</p>
+                    <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- <section class="items-block items-block_pmt">
+    <div class="items-block__background"></div>
+    <div class="container">
+        <div class="header-block">
+            <h1 class="header-block__header header-block__header_first-line">Фотоэлектронные</h1>
+            <h1 class="header-block__header header-block__header_second-line">умножители</h1>
+        </div>
+        <div class="description-block description-block_flex">
+            <div class="description-block__background"></div>
+            <div class="description-block__text">
+                <p class="description-text"> для применения в <span class="description-text__span_green">космической, авиационной промышленности,</span> а также в <span class="description-text__span_green">научных исследованиях</span> для регистрации слабых сигналов </p>
+                <a href="#" class="button">Каталог</a>
+            </div>
+        </div>
+        <div class="body-block">
+            <img src="img/ufgbfg5d22d.png" alt="" class="body-block__front-image">
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="item-pmt">
+    <div class="container">
+        <h1 class="section-subheader"> <span>Фотоэлектронные</span>  умножители</h1>
+        <div class="subheader-line"></div>
+        <div class="wrapper">
+            <div class="info-block">
+                <p class="text">Электровакуумные приборы для применения в космической, авиационной промышленности, а также в научных исследованиях для регистрации слабых сигналов. Основной конструктивной особенностью является микроканальное усиление, в отличие от традиционно применяемого динодного. Специальная технология производства ФЭУ дает возможность выпуска ЭОП различных модификаций и исполнений в зависимости от конкретного применения</p>
+                <a href="#" class="btn">Каталог <img src="img/south_east_black_48dp.svg" alt=""></a>
+                <h1 class="header">Применение</h1>
+                <div class="applications">
+                    <div class="wrapper-applications">
+                        <div class="block science">
+                            <img src="img/icons8-science-64.png" alt="" class="icon">
+                            <h4 class="block-header">Наука</h4>
+                        </div>
+                        <div class="block aviation">
+                            <img src="img/icons8-aviation.png" alt="" class="icon">
+                            <h4 class="block-header">Авиация</h4>
+                        </div>
+                    </div>
+                    <div class="wrapper-applications">
+                        <div class="block space">
+                            <img src="img/icons8-satellite-60.png" alt="" class="icon">
+                            <h4 class="block-header">Космос</h4>
+                        </div>
+                        <div class="block laser">
+                            <img src="img/icons8-laser.png" alt="" class="icon">
+                            <h4 class="block-header">LIDAR</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="pmt">
-        <div class="container">
-            <h1 class="header">Фотоэлектронные <br> умножители</h1>
-            
-            <div class="text-block">
-                <div class="left-col">
-                    <p>Электровакуумные приборы для применения в космической, авиационной промышленности, а также в научных исследованиях для регистрации слабых сигналов. Основной конструктивной особенностью является микроканальное усиление, в отличие от традиционно применяемого динодного. Специальная технология производства ФЭУ дает возможность выпуска ЭОП различных модификаций и исполнений в зависимости от конкретного применения.</p>
-                    <a href="#" class="btn">Подробнее</a>
-                </div>
-                <div class="right-col">
-
+            <div class="img-block">
+                <div class="img">
+                    <img src="img/ufgbfg5d22d.png" alt="">
                 </div>
             </div>
-
-            <h2 class="sub-header">Области применения</h2>
-
+        </div>
+    </div>
+</section> -->
+<!-- <section class="item-nvd">
+    <div class="container">
+        <h1 class="section-subheader">Приборы ночного <br> видения</h1>
+        <div class="subheader-line"></div>
+        <div class="wrapper-main">
+            <div class="info-block">
+                <h1 class="header">Цели применения</h1>
+                <p class="text">Широкий спектр приборов ночного видения производства ООО «Катод» включает приборы для наблюдения и прицеливания, патрулирования, навигации, а также специальных операций. Разработка на базе собственных электронно-оптических преобразователей 2+ и 3 поколения даёт возможность производства уникальных приборов конкретного назначения</p>
+                <a href="#" class="btn">Подробнее <img src="img/south_east_black_48dp.svg" alt=""></a>
+            </div>
             <div class="wrapper">
-                <div class="col applications">
-                    <div class="wrapper">
-                        <div class="science">
-                            <h3>Наука</h3>
-                        </div>
-                        <div class="space">
-                            <h3>Космос</h3>
-                        </div>
-                    </div>
-                    <div class="aviation">
-                        <h3>Авиация</h3>
+                <div class="block surveillance">
+                    <div class="text-block">
+                        <p class="block-counter">01</p>
+                        <h3 class="block-header">Наблюдение</h3>
+                        <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="lidar">
-                    <h3>Технология LIDAR</h3>
+                <div class="block law">
+                    <div class="text-block">
+                        <p class="block-counter">02</p>
+                        <h3 class="block-header">Охрана правопорядка</h3>
+                        <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+                    </div>
                 </div>
-               
+                <div class="block hunt">
+                    <div class="text-block">
+                        <p class="block-counter">03</p>
+                        <h3 class="block-header">Охота и спорт</h3>
+                        <a href="#" class="btn">Подробнее <img src="img/south_east_white_48dp.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="nvd">
-        <div class="container">
-            <h1 class="header">Приборы ночного видения</h1>
+    </div>
+</section> -->
+<!-- <section class="item-equip">
+    <div class="container">
+        <h1 class="section-subheader">Вакуумное <br> оборудование</h1>
+        <div class="subheader-line"></div>
+        <div class="wrapper">
+            <div class="img-block">
+                <div class="img">
+                </div>
+            </div>
+            <div class="info-block">
+                <p class="text">Проектирование и изготовление вакууумных и сверхвысоковакууных систем, компонентов, а также прочего промышленного оборудования под индивидуальные задачи</p>
+                <a href="#" class="btn">Каталог <img src="img/south_east_black_48dp.svg" alt=""></a>
+                <h1 class="header">Категории</h1>
+                <ul class="item-list">
+                    <li class="block-header">напылительное вакуумное оборудование</li>
+                    <li class="block-header">вакуумно-термическое оборудование</li>
+                    <li class="block-header">вакуумные магниторазрядные насосы</li>
+                    <li class="block-header">прочее промышленное оборудование</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section class="contact-us">
+    <div class="contact-background"></div>
+    <div class="container">
+        <div class="right-col">
+            <h1 class="section-header"> <span>Свяжитесь</span>  <br> с нами</h1>
             <div class="wrapper">
-                <div class="cols">
-                    <div class="col surveillance">
-                        <h3>Наблюдение</h3>
-                    </div>
-                    <div class="col law">
-                        <h3>Охрана <br> правопорядка</h3>
-                    </div>
-                    <div class="col hunting">
-                        <h3>Охота <br> и спорт</h3>
-                    </div>
+                <p class="text">630047, Россия, г. Новосибирск, ул. Падунская, 3 <br> +7 (383) 216-35-06 <br> info@katodnv.com </p>
+                <a href="#" class="btn">Контакты <img src="img/south_east_black_48dp.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <div class="left-col">
+                <img src="img/logo-katod.png" alt="" class="logo">
+                <h3 class="header">Катод</h3>
+            </div>
+            <div class="right-col">
+                <div class="email contact-block">
+                    <img src="img/outline_phone_white_48dp — copy.png" alt="" class="icon">
+                    <h3 class="header">+7 (383) 216-35-06</h3>
                 </div>
-                <div class="text-block">
-                    <p>Широкий спектр приборов ночного видения производства ООО «Катод» включает приборы для наблюдения и прицеливания, патрулирования, навигации, а также специальных операций. Разработка на базе собственных электронно-оптических преобразователей 2+ и 3 поколения даёт возможность производства уникальных приборов конкретного назначения.</p>
+                <div class="phone contact-block">
+                    <img src="img/outline_email_white_48dp — copy.png" alt="" class="icon">
+                    <h3 class="header">info@katodnv.com</h3>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="wrapper contact-body">
+            <div class="sitemap">
+                <h3 class="header">Карта сайта</h3>
+                <ul class="map">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Работа в компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="catalog">
+                <h3 class="header">Продукция</h3>
+                <ul class="products">
+                    <li><a href="#">Электронно-оптические преобразователи</a></li>
+                    <li><a href="#">Приборы ночного видения</a></li>
+                    <li><a href="#">Фотоэлектронные умножители</a></li>
+                    <li><a href="#">Вакуумное оборудование</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <h3 class="header">Адрес</h3>
+                <p class="text">630047, Россия, г. Новосибирск, ул. Падунская, 3</p>
+            </div>
+        </div>
+        <div class="rights">
+            <p class="text">@ 2021 ООО "Катод" - Все права защищены</p>
+        </div>
+    </div>
+</footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            submenu = document.querySelector('.tube-block');
-            submenu.addEventListener('click', function() {
-                background = document.querySelector('.slider-background');
-                background.style.background = "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/7474-1.jpg)";
-                document.querySelector('.slider-text').innerHTML = "Единственный в России серийный производитель электронно-оптических преобразователей 3 поколения с показателем FOM 2000 и выше";
-                document.querySelector('.slider-counter').innerHTML = "02/<span>04</span>";
-            })
-        })
-        document.addEventListener('DOMContentLoaded', function() {
-            submenu = document.querySelector('.main-block');
-            submenu.addEventListener('click', function() {
-                background = document.querySelector('.slider-background');
-                background.style.background = "linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(59, 59, 59, 0.6)), url(../img/slider1-min.jpg)";
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector(".right-control").onclick = function() {
+            let i = document.querySelector(".active").dataset.index;
+            let background = document.querySelectorAll('.background');
+            background[i].classList.add('animate__slideOutLeft');
+            background[i].classList.remove('active');
+            if (i == background.length-1) {
+                i = 0;
+                background[i].classList.remove('animate__slideOutLeft');
+                for (let a = 0; a < background.length; a++) {
+                    background[a].classList.remove('animate__slideInRight');
+                }
+                for (let a = 0; a < background.length-1; a++) {
+                    background[a].classList.remove('animate__slideOutLeft', 'absolute');
+                }
+            } else {
+                i++;
+            };
+            if (i == background.length-2) {
+                let a = i+1;
+                background[a].classList.remove('animate__slideOutLeft', 'absolute');
+            }
+            background[i].classList.add('animate__slideInRight', 'absolute');
+            background[i].classList.add('active');
+        }
+    })
 
-            })
-        })
-    </script>
+
+</script>
 </body>
 </html>
