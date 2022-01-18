@@ -362,6 +362,7 @@ section.description .column-right_header {
 section.description .column-right_text {
   font-size: 1.2em;
   font-weight: 300;
+  width: 300px;
 }
 
 section.description .btn {
