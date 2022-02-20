@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
+html {
+    //scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -285,6 +289,7 @@ section.home-screen {
 
 section.catalog {
     margin-top: 6em;
+    margin-bottom: 6em;
 }
 
 .catalog-header {
@@ -318,7 +323,7 @@ section.catalog {
 
 .catalog-list {
     display: flex;
-    place-content: space-between;
+    place-content: start;
     margin: 2em 0;
 
     a {
@@ -341,7 +346,7 @@ section.catalog {
 
     .catalog-list-image-block {
         background: rgb(239, 239, 239);
-
+        
         img {
             padding: 5em 2em;
             width: 200px;

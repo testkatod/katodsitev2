@@ -364,41 +364,66 @@ section.products .equip {
   border-bottom: 4px solid rgba(0, 177, 162, 0.5);
 }
 
-section.subcatalog {
+section.subcatalog_2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-bottom: 3em;
 }
 
-section.subcatalog .arrow-down {
-  width: 70px;
-  margin: auto 0;
-}
-
-section.subcatalog .block {
+section.subcatalog_2 .secondary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  border-top: 0.1em solid black;
+  padding: 4em 0;
+  padding-top: 0;
+  margin-top: -8em;
 }
 
-section.subcatalog .equip {
+section.subcatalog_2 .secondary-nav h3 {
+  font-size: 1em;
+  color: #013601;
+}
+
+section.subcatalog_2 .secondary-nav .counter {
+  font-size: 1.5em;
+  color: #013601;
+}
+
+section.subcatalog_2 .secondary-nav .block {
+  padding: 0 1em;
+  background-color: #eeeeee;
+  border-bottom: 2px solid rgba(1, 54, 1, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 25%;
+}
+
+section.subcatalog_2 .secondary-nav .block:hover {
+  background-color: rgba(192, 192, 192, 0.7);
+  border-bottom: 2px solid #013601;
+}
+
+section.subcatalog_2 .arrow-down {
+  width: 70px;
+  margin: auto 0;
+}
+
+section.subcatalog_2 .equip {
   border-bottom: 0.1em solid black;
 }
 
-section.subcatalog .little_text {
+section.subcatalog_2 .little_text {
   color: green;
   display: inline-block;
 }
 
-section.subcatalog .icon {
+section.subcatalog_2 .icon {
   width: 60px;
   height: 60px;
   margin: auto 0;
 }
 
-section.subcatalog h3 {
+section.subcatalog_2 h3 {
   color: #013601;
   margin: 0;
   font-weight: 300;
@@ -781,14 +806,14 @@ section.subcatalog h3 {
 }
 
 .float-block {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(white));
-  background: linear-gradient(#f7f7f7, white);
-  width: 60%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background: linear-gradient(white, white);
   margin: 0 auto;
   padding: 4em 2em;
   z-index: 5;
   margin-top: -43em;
   margin-bottom: 24em;
+  border: 1px solid #e9e9e9;
 }
 
 .float-block .btn {
@@ -828,12 +853,20 @@ section.subcatalog h3 {
 .subcatalog__text {
   width: 400px;
   font-weight: 300;
-  margin-left: 19em;
+  margin-left: 45em;
 }
 
 section.item-block-new {
-  background: #1d1d1d;
-  padding: 6em 0;
+  padding-top: 6em;
+}
+
+section.item-block-new .text-col__header, section.item-block-new .text-col__text, section.item-block-new .btn {
+  color: #272727;
+}
+
+section.item-block-new .container {
+  border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 6em;
 }
 
 .item-block-new__wrapper {
@@ -843,7 +876,7 @@ section.item-block-new {
 }
 
 .text-col {
-  width: 40%;
+  width: 55%;
   z-index: 5;
 }
 
@@ -864,7 +897,7 @@ section.item-block-new {
 }
 
 .image-col {
-  width: 60%;
+  width: 45%;
   background: url("../img/BRD_0643.jpg");
   background-size: cover;
   background-position: left;
@@ -912,7 +945,7 @@ section.item-block-new {
 }
 
 .text-col__header {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 800;
   text-transform: uppercase;
   color: white;
@@ -924,9 +957,9 @@ section.item-block-new {
 }
 
 .text-col__header_wide {
-  width: 700px;
   float: right;
   margin-bottom: 0.3em;
+  padding-left: 2.5em;
 }
 
 .text-col_relative {
@@ -938,7 +971,7 @@ section.item-block-new {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 400px;
+  width: 300px;
   height: 1px;
   background: green;
 }
@@ -947,7 +980,7 @@ section.item-block-new {
   content: '';
   position: absolute;
   top: 0;
-  width: 700px;
+  width: 550px;
   height: 2px;
   background: green;
 }
@@ -957,7 +990,7 @@ section.item-block-new {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 400px;
+  width: 300px;
   height: 1px;
   background: green;
 }
@@ -967,7 +1000,7 @@ section.item-block-new {
   position: absolute;
   top: 0;
   right: 0;
-  width: 700px;
+  width: 550px;
   height: 2px;
   background: green;
 }
@@ -1403,8 +1436,8 @@ section.item-block-new {
 }
 
 footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.98)), to(rgba(58, 58, 58, 0.9))), url("../img/BRD_0320-min — copy.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.98), rgba(58, 58, 58, 0.9)), url("../img/BRD_0320-min — copy.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(58, 58, 58, 0.97))), url("../img/BRD_0320-min — copy.jpg");
+  background: linear-gradient(black, rgba(58, 58, 58, 0.97)), url("../img/BRD_0320-min — copy.jpg");
   background-size: cover;
   background-position: center;
   color: white;

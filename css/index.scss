@@ -232,6 +232,7 @@ section.home-screen {
 }
 
 section.about {
+  //  background: linear-gradient(white, rgb(52, 52, 52));
     .wrapper {
         display: flex;
         padding: 4em 0;
@@ -362,22 +363,52 @@ section.products {
     }
 }
 
-section.subcatalog {
+section.subcatalog_2 {
     //background: rgb(55, 53, 53);
     box-sizing: border-box;
-    padding-bottom: 3em;
+
+    .secondary-nav {
+        display: flex;
+        place-content: space-between;
+        padding: 4em 0;
+        padding-top: 0;
+        margin-top: -8em;
+
+        h3 {
+            font-size: 1em;
+            color: rgb(1, 54, 1);
+        }
+
+        .counter {
+            font-size: 1.5em;
+            color:rgb(1, 54, 1)
+        }
+
+        .block {
+            padding: 0 1em;
+            background-color: rgb(238, 238, 238);
+            border-bottom: 2px solid rgba(1, 54, 1, 0.3);
+            transition: 0.5s;
+            width: 25%;
+
+            &:hover {
+                background-color: rgba(192, 192, 192, 0.7);
+                border-bottom: 2px solid rgba(1, 54, 1, 1);
+            }
+        }
+    }
 
     .arrow-down {
         width: 70px;
         margin: auto 0;
     }
 
-    .block {
-        display: flex;
-        place-content: space-between;
-       // border-top: 0.1em solid rgb(184, 184, 184);
-        border-top: 0.1em solid rgb(0, 0, 0);
-    }
+    // .block {
+    //     display: flex;
+    //     place-content: space-between;
+    //    // border-top: 0.1em solid rgb(184, 184, 184);
+    //     border-top: 0.1em solid rgb(0, 0, 0);
+    // }
 
     .equip {
        // border-bottom: 1px solid rgb(182, 182, 182);
@@ -840,18 +871,30 @@ section.subcatalog {
     background-size: cover;
     background-position: center;
     z-index: -5;
-    margin-top: 15em;
+   // padding-top: 15em;
+     margin-top: 15em;
+
+    // &:before {
+    //     content: '';
+    //     display: block;
+    //     height: 15em;
+    //     width: 100%;
+    //     background: gray;
+    // }
 }
 
 .float-block {
     //background: rgb(36, 36, 36);
-    background: linear-gradient(rgb(247, 247, 247), white);
-    width: 60%;
+    background: linear-gradient(rgb(255, 255, 255), white);
+  //  width: 60%;
     margin: 0 auto;
     padding: 4em 2em;
     z-index: 5;
     margin-top: -43em;
     margin-bottom: 24em;
+    border: 1px solid rgb(233, 233, 233);
+   // border: 1px solid rgb(0, 55, 0);
+    // box-shadow: 1px 1px 0px 0px rgb(84, 84, 84);
 
     .btn {
         color:rgb(1, 54, 1);
@@ -892,14 +935,24 @@ section.subcatalog {
 .subcatalog__text {
     width: 400px;
     font-weight: 300;
-    margin-left: 19em;
+    margin-left: 45em;
 }
 
 // Новые единообразные блоки
 section.item-block-new {
   //  background:rgb(55, 53, 53);
-    background:rgb(29, 29, 29);
-    padding: 6em 0;
+   // background:rgb(255, 255, 255);
+    padding-top: 6em;
+
+    .text-col__header, .text-col__text, .btn {
+        color: rgb(39, 39, 39);
+    }
+
+    .container {
+        border-bottom: 1px solid rgb(191, 191, 191);
+        padding-bottom: 6em;
+    }
+    
 }
 
 .item-block-new__wrapper {
@@ -907,7 +960,7 @@ section.item-block-new {
 }
 
 .text-col {
-    width: 40%;
+    width: 55%;
     z-index: 5;
 
     .btn {
@@ -929,7 +982,7 @@ section.item-block-new {
 }
 
 .image-col {
-    width: 60%;
+    width: 45%;
     background: url('../img/BRD_0643.jpg');
     background-size: cover;
     background-position: left;
@@ -979,7 +1032,7 @@ section.item-block-new {
 }
 
 .text-col__header {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 800;
     text-transform: uppercase;
     color: white;
@@ -991,10 +1044,11 @@ section.item-block-new {
 }
 
 .text-col__header_wide {
-    width: 700px;
+    //width: 700px;
    // position: absolute;
     float: right;
     margin-bottom: 0.3em;
+    padding-left: 2.5em;
 
 }
 
@@ -1008,7 +1062,7 @@ section.item-block-new {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 400px;
+        width: 300px;
         height: 1px;
         background: rgb(0, 128, 0);
     }
@@ -1017,7 +1071,7 @@ section.item-block-new {
         content: '';
         position: absolute;
         top: 0;
-        width: 700px;
+        width: 550px;
         height: 2px;
         background: rgb(0, 128, 0);
     }
@@ -1029,7 +1083,7 @@ section.item-block-new {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 400px;
+        width: 300px;
         height: 1px;
         background: rgb(0, 128, 0);
     }
@@ -1039,7 +1093,7 @@ section.item-block-new {
         position: absolute;
         top: 0;
         right: 0;
-        width: 700px;
+        width: 550px;
         height: 2px;
         background: rgb(0, 128, 0);
     }
@@ -1492,7 +1546,7 @@ section.item-block-new {
 
 footer {
 
-    background: linear-gradient(rgba(0, 0, 0, 0.98), rgba(58, 58, 58, 0.9)), url('../img/BRD_0320-min\ —\ copy.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(58, 58, 58, 0.97)), url('../img/BRD_0320-min\ —\ copy.jpg');
     background-size: cover;
     background-position: center;
     color: white;

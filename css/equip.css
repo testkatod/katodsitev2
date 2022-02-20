@@ -290,6 +290,7 @@ section.home-screen .hero-body .text {
 
 section.catalog {
   margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 .catalog-header {
@@ -326,7 +327,7 @@ section.catalog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: space-between;
+  place-content: start;
   margin: 2em 0;
 }
 
@@ -496,4 +497,4 @@ footer .wrapper .address .text {
 footer .contact-body {
   padding: 5em 0;
 }
-/*# sourceMappingURL=tube.css.map */
+/*# sourceMappingURL=equip.css.map */

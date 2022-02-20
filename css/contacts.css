@@ -73,10 +73,54 @@ body {
   z-index: 0;
 }
 
-section.home-screen {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(transparent)), url("../img/subtle-prism_main.svg");
-  background: linear-gradient(#1a1a1a, transparent), url("../img/subtle-prism_main.svg");
+.bg-first {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/slider1-min.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/slider1-min.jpg");
   background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+  width: 100vw;
+}
+
+.bg-second {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/7474-1.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/7474-1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.bg-third {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/BRD_0320-min.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/BRD_0320-min.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.bg-forth {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/45634-min.png");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/45634-min.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.active {
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+.absolute {
+  position: absolute;
+  z-index: -1;
 }
 
 section.home-screen .navbar {
@@ -100,12 +144,11 @@ section.home-screen .primary-nav {
 section.home-screen .primary-nav li {
   list-style-type: none;
   padding: 1em 2em;
-  color: white;
 }
 
 section.home-screen .primary-nav li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 section.home-screen .language-block {
@@ -123,7 +166,6 @@ section.home-screen .language-block .icon {
 section.home-screen .language-block .language-selector {
   font-size: 1em;
   margin: auto 0;
-  color: white;
 }
 
 section.home-screen .hero-header {
@@ -163,254 +205,87 @@ section.home-screen .hero-body .text {
   margin: 0;
 }
 
-.background-wrapper {
+section.contacts-body .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  position: absolute;
-  z-index: -5;
 }
 
-.background-wrapper .color-line {
-  width: 40%;
-  height: 630px;
+section.contacts-body .left-col {
+  width: 50%;
 }
 
-.background-wrapper .photo-line {
-  width: 60%;
-  height: 630px;
-  background: url("../img/BRD_0643.jpg");
-  background-size: cover;
-}
-
-.header-text-block {
-  color: white;
-  width: 900px;
-  padding: 3em 0;
-  position: relative;
-}
-
-.header-text-block .text-block-header {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3.5em;
-  position: relative;
+section.contacts-body .right-col {
+  width: 50%;
+  height: 100%;
   padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  z-index: 1;
 }
 
-.header-text-block .text-block-header:after {
-  content: '';
-  width: 900px;
-  height: 2px;
-  background: #03b703;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.header-text-block .text-block-header:before {
-  content: '';
-  width: 450px;
-  height: 1px;
-  background: #03b703;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.header-text-block .text {
-  width: 400px;
-  font-size: 1.2em;
-  font-weight: 200;
-}
-
-.header-text-block .big-photo_background {
-  position: absolute;
-  top: 27em;
-  left: 25em;
-  z-index: 0;
-}
-
-.facts {
-  background-size: cover;
-}
-
-.facts:before {
-  content: '';
-  display: block;
+section.contacts-body .right-col iframe {
   width: 100%;
-  height: 20px;
+  height: 45em;
 }
 
-.facts-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  position: relative;
-  padding: 4em 0;
+section.contacts-body .contacts-body__header {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  color: #013601;
 }
 
-.facts-wrapper .facts-block {
-  margin: auto 0;
-}
-
-.facts-wrapper .facts-block-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.facts-wrapper .facts-block-wrapper p {
-  padding-right: 1em;
-}
-
-.facts-wrapper .big-photo {
-  width: 450px;
-  position: absolute;
-  right: 0em;
-  top: 0em;
-}
-
-.facts-wrapper .facts-block {
-  padding-right: 2em;
-  padding-left: 2em;
-  width: 200px;
-  border-right: 1px solid green;
-}
-
-.facts-wrapper .facts-block .facts-block-header {
-  text-transform: uppercase;
-  font-weight: 800;
+section.contacts-body .contacts-body__subheader {
   font-size: 1.5em;
 }
 
-section.catalog {
-  margin-top: 6em;
-}
-
-.catalog-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.catalog-header .catalog-header-block {
-  margin-right: 2em;
-  border-bottom: 1px solid gray;
-}
-
-.catalog-header .catalog-header-block-header {
+section.contacts-body .contact-block__header {
   font-size: 2em;
   font-weight: 400;
-  color: gray;
-  margin-bottom: 0;
+  display: inline-block;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.catalog-header .catalog-header-block-subheader {
-  color: gray;
+section.contacts-body .contact-block__icon {
+  display: inline;
 }
 
-.catalog-header .catalog-header-block-subheader-active {
-  color: black;
+.map {
+  padding-top: 7em;
+  padding-bottom: 4em;
 }
 
-.catalog-header .catalog-header-block-header-active {
-  color: #013601;
-}
-
-.catalog-list {
+.map .map__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: space-between;
-  margin: 2em 0;
 }
 
-.catalog-list a {
-  text-decoration: none;
+.map .left-col {
+  width: 70%;
+  background: url("../img/world-map-png-35426.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
-.catalog-list .catalog-list-block {
-  padding: 1em;
-  border-bottom: 2px solid #cdcdcd;
-  width: 25%;
+.map .right-col {
+  width: 30%;
+  padding-left: 4em;
 }
 
-.catalog-list .catalog-list-block:hover {
-  border-bottom: 2px solid #013601;
-}
-
-.catalog-list .catalog-list-block:hover .catalog-list-block-header {
+.map .map__header {
+  font-size: 5em;
   color: #013601;
 }
 
-.catalog-list .catalog-list-image-block {
-  background: #efefef;
+.map .map__text {
+  font-size: 1.3em;
 }
 
-.catalog-list .catalog-list-image-block img {
-  padding: 5em 2em;
-  width: 200px;
-}
-
-.catalog-list .catalog-list-block-header {
-  font-size: 1.5em;
-  color: #4a4a4a;
-}
-
-.catalog-custom {
-  padding: 7em 0;
-  margin: 7em 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(23, 23, 23, 0.6))), url("../img/BRD_0373.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(23, 23, 23, 0.6)), url("../img/BRD_0373.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.catalog-custom .catalog-custom-header {
-  font-size: 3em;
-  font-weight: 800;
+.map .map__btn {
+  text-decoration: none;
+  color: black;
   text-transform: uppercase;
-  position: relative;
-  padding: 0.1em 0;
-}
-
-.catalog-custom .catalog-custom-header:after {
-  content: '';
-  width: 800px;
-  height: 2px;
-  background: #03b703;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.catalog-custom .catalog-custom-header:before {
-  content: '';
-  width: 450px;
-  height: 1px;
-  background: #03b703;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.catalog-custom .catalog-custom-subheader {
-  width: 450px;
   font-size: 1.2em;
-  font-weight: 300;
-}
-
-.catalog-custom .btn {
-  text-transform: uppercase;
-  color: white;
-  font-weight: 600;
 }
 
 footer {
@@ -496,4 +371,4 @@ footer .wrapper .address .text {
 footer .contact-body {
   padding: 5em 0;
 }
-/*# sourceMappingURL=tube.css.map */
+/*# sourceMappingURL=contacts.css.map */

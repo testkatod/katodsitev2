@@ -77,10 +77,10 @@ body {
 
 section.home-screen {
 
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/BRD_0643.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pnvbacknew-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-position: center;
 
     .container {
         position: relative;
@@ -205,7 +205,7 @@ section.home-screen {
     .photo-line {
         width: 65%;
         height: 750px;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/BRD_0643.jpg');
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/pnvbacknew-min.jpg');
         background-size: cover;
         background-position: center;
     }
@@ -404,8 +404,15 @@ section.description {
 
 section.hash {
 
-    padding: 4em 0;
+    padding: 10em 0;
     position: relative;
+    background: url('../img/subtle-prism.svg');
+    background-size: cover;
+
+    .container {
+       // background: url('../img/subtle-prism.svg');
+        background-size: cover;
+    }
 
     .wrapper {
         display: flex;
@@ -415,7 +422,7 @@ section.hash {
     .hash_image-1 {
         width: 300px;
         height: 300px;
-        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/BRD_0373.jpg');
+        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/sequre\ —\ копия.jpg');
         background-size: cover;
         background-position: center;
         margin: auto 0;
@@ -424,7 +431,7 @@ section.hash {
     .hash_image-2 {
         width: 400px;
         height: 500px;
-        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/BRD_0320-min.jpg');
+        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/hunting.jpg');
         background-size: cover;
         background-position: center;
         margin: auto 0;
@@ -433,7 +440,7 @@ section.hash {
     .hash_image-3 {
         width: 300px;
         height: 400px;
-        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/pmt_aux-img.jpg');
+        background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url('../img/observe\ —\ копия.jpg');
         background-size: cover;
         background-position: center;
         margin: auto 0;
@@ -443,10 +450,10 @@ section.hash {
         position: absolute;
         text-transform: uppercase;
        // top: 1.2em;
-       bottom: 0;
+       bottom: 1em;
         font-size: 7em;
         font-weight: 700;
-        color: rgb(97, 240, 202);
+        color: rgba(165, 73, 131, 0.9);
         font-style: italic;
     }
 }
@@ -479,11 +486,11 @@ section.grades {
     }
 
     .grades_header-block_wrapper {
-        margin-top: -9em;
+        margin-top: -13em;
         
         img {
-            width: 350px;
-            height: 350px;
+            width: 500px;
+            height: 500px;
         }
     }
 
@@ -527,51 +534,51 @@ section.grades {
     .grade_col_parameters_unit {
         display: flex;
         place-content: space-between;
-        width: 300px;
+        width: 500px;
         position: relative;
 
         &:after {
             content: '';
             position: absolute;
-            width: 300px;
+            width: 500px;
             height: 7px;
             background: gray;
             bottom: 0;
         }
     }
 
-    .grade_col_parameters_unit-lower-FOM {
-        &:after {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 7px;
-            background: linear-gradient(to right, gray 87%, rgb(194, 194, 194) 87%);
-            bottom: 0;
-        }
-    }
+    // .grade_col_parameters_unit-lower-FOM {
+    //     &:after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 300px;
+    //         height: 7px;
+    //         background: linear-gradient(to right, gray 87%, rgb(194, 194, 194) 87%);
+    //         bottom: 0;
+    //     }
+    // }
 
-    .grade_col_parameters_unit-lower-res {
-        &:after {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 7px;
-            background: linear-gradient(to right, gray 94%, rgb(194, 194, 194) 94%);
-            bottom: 0;
-        }
-    }
+    // .grade_col_parameters_unit-lower-res {
+    //     &:after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 300px;
+    //         height: 7px;
+    //         background: linear-gradient(to right, gray 94%, rgb(194, 194, 194) 94%);
+    //         bottom: 0;
+    //     }
+    // }
 
-    .grade_col_parameters_unit-lower-snr {
-        &:after {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 7px;
-            background: linear-gradient(to right, gray 92%, rgb(194, 194, 194) 92%);
-            bottom: 0;
-        }
-    }
+    // .grade_col_parameters_unit-lower-snr {
+    //     &:after {
+    //         content: '';
+    //         position: absolute;
+    //         width: 300px;
+    //         height: 7px;
+    //         background: linear-gradient(to right, gray 92%, rgb(194, 194, 194) 92%);
+    //         bottom: 0;
+    //     }
+    // }
 
     .grade_col_description {
         border-left: 1px solid rgb(205, 205, 205);
@@ -580,8 +587,8 @@ section.grades {
 
 
     .grade_tube-image {
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         margin: auto 0;
     }
 }
@@ -691,7 +698,7 @@ section.contact-us {
         margin: 2em auto;
         margin-bottom: 0;
         padding: 10em 0;
-        background: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.434)), url('../img/7474-1.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.434)), url('../img/45634-min.png');
     }
 
     .btn {

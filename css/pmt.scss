@@ -285,6 +285,7 @@ section.home-screen {
 
 section.catalog {
     margin-top: 6em;
+    margin-bottom: 6em;
 }
 
 .catalog-header {
@@ -318,7 +319,7 @@ section.catalog {
 
 .catalog-list {
     display: flex;
-    place-content: space-between;
+    //place-content: space-between;
     margin: 2em 0;
 
     a {

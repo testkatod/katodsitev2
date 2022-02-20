@@ -76,7 +76,7 @@ body {
 
 
 .bg-first {
-    background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url('../img/slider1-min.jpg');
+    background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url('../img/collective-min.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -205,73 +205,195 @@ section.home-screen {
     }
 }
 
-// Разделы в большом меню
+.careers-body {
+    .wrapper {
+       // display: flex;
+        padding: 4em 0;
+        padding-top: 0;
 
-.catalog_block_wrapper {
-    position: relative;
-    padding: 4em 0;
-   // margin: 4em 0;
-}
+        .left-col {
+            margin: auto 0;
+            padding-right: 5em;
+        }
 
-.catalog_block__counter {
-    position: absolute;
-    margin: 0;
-    font-size: 18em;
-    right: 0;
-    color: rgba(68, 68, 68, 0.2);
-}
+        .col__text {
+            font-size: 3em;
+            font-weight: 400;
+            text-align: center;
+            
+            span {
+                font-style: italic;
+                font-weight: 200;
+            }
+        }
 
-.catalog_block_tube {
-    background:rgba(0, 163, 98, 0.5);
-}
+        .col__subtext {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            font-weight: 300;
+        }
 
-.catalog_block_nvd {
-    background: rgba(73, 2, 15, 0.5);
-}
+        .col__img {
+            width: 450px;
+            height: 500px;
+            background: url('../img/hands2-min.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
 
-.catalog_block_pmt {
-    background: rgba(2, 69, 192, 0.5);
-}
+    .right-col {
+        margin-top: 5em;
+        .wrapper {
+            display: flex;
+            place-content: space-between;
+        }
 
-.catalog_block_equip {
-    background: rgba(0, 177, 162, 0.5);
-}
+        .block {
+            width: 28%;
+        }
 
-.catalog_block__header {
-    margin: 1em 0;
-    font-size: 6.5em;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
+        .block__bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)) ,url('../img/hands2-min.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 18em;
+            padding-left: 1.5em;
+        }
 
-    span {
-        color: transparent;
-        -webkit-text-stroke: 1px white;
+        .block__bg-social {
+            background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)) ,url('../img/collective-min.jpg');
+            background-position: center;
+        }
+
+        .block__bg-people {
+            background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)) ,url('../img/main-block.jpg');
+            background-position: center;
+        }
+
+        .block__header {
+            font-size: 1.7em;
+            font-weight: 400;
+            color: white;
+        }
+
+        .block-middle {
+            margin-top: 5em;
+        }
+
+        .block__arrow {
+            margin-left: 75%;
+            width: 70px;
+        }
+
+        .block__text {
+            background: rgba(235, 235, 235, 0.261);
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .block__text__text {
+           // padding-top: 2em;
+            font-weight: 300;
+        }
     }
 }
 
-.catalog_block__front_image {
-    position: absolute;
-    width: 400px;
-    right: 425px;
-    top: 150px;
-    opacity: 90%;
+section.items {
+    background-color: rgba(145, 145, 145, 0.042);
+
+    .wrapper {
+        display: flex;
+        place-content: space-between;
+        padding: 5em 0;
+
+        .left-col {
+            width: 50%;
+            padding-right: 8em;
+
+            p {
+                font-size: 1.4em;
+                font-weight: 300;
+            }
+        }
+
+        .right-col {
+            width: 50%;
+            border-left: 1px solid rgba(128, 128, 128, 0.1);
+            padding-left: 4em;
+        }
+
+        .right-col__text-block {
+            padding-bottom: 2em;
+        }
+
+        p.right-col__header {
+            font-size: 1.2em;
+            font-weight: 500;
+            text-transform: uppercase;
+            color:rgb(1, 54, 1);
+        }
+
+        p.right-col__text {
+            font-weight: 300;
+        }
+
+    }
 }
 
-.catalog_block__front_image_nvd {
-    width: 600px;
-    right: 300px;
-}
+section.vacancies {
 
-.catalog_block__front_image_pmt {
-    width: 400px;
-}
+    padding: 6em 0;
 
-.catalog_block__front_image_equip {
-    width: 550px;
-    right: 300px;
-}
+    .vacancies__header {
+        font-size: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
 
+    .vacancies__subheader {
+        margin: 0.5em 0;
+    }
+
+    .vacancies__header-block {
+        border-bottom: 1px solid rgba(0, 128, 0, 0.371);
+    }
+
+    .wrapper {
+        display: flex;
+    }
+
+    .vacancy__block {
+        width: 50%;
+        padding-right: 7em;
+        padding-top: 3em;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.331);
+        padding-left: 2em;
+        padding-bottom: 3em;
+
+        &:hover {
+            border-bottom: 2px solid rgba(128, 128, 128, 0.9);
+            background: rgba(128, 128, 128, 0.15);
+        }
+    }
+
+    .vacancy-block__header {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .vacancy-block__text {
+        font-weight: 300;
+    }
+
+    .btn {
+        text-transform: uppercase;
+    }
+}
 
 footer {
 

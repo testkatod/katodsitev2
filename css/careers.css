@@ -74,8 +74,8 @@ body {
 }
 
 .bg-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/slider1-min.jpg");
-  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/slider1-min.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(87, 87, 87, 0.5)), to(rgba(87, 87, 87, 0.5))), url("../img/collective-min.jpg");
+  background: linear-gradient(rgba(87, 87, 87, 0.5), rgba(87, 87, 87, 0.5)), url("../img/collective-min.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -205,68 +205,198 @@ section.home-screen .hero-body .text {
   margin: 0;
 }
 
-.catalog_block_wrapper {
-  position: relative;
+.careers-body .wrapper {
   padding: 4em 0;
+  padding-top: 0;
 }
 
-.catalog_block__counter {
-  position: absolute;
-  margin: 0;
-  font-size: 18em;
-  right: 0;
-  color: rgba(68, 68, 68, 0.2);
+.careers-body .wrapper .left-col {
+  margin: auto 0;
+  padding-right: 5em;
 }
 
-.catalog_block_tube {
-  background: rgba(0, 163, 98, 0.5);
+.careers-body .wrapper .col__text {
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
 }
 
-.catalog_block_nvd {
-  background: rgba(73, 2, 15, 0.5);
+.careers-body .wrapper .col__text span {
+  font-style: italic;
+  font-weight: 200;
 }
 
-.catalog_block_pmt {
-  background: rgba(2, 69, 192, 0.5);
+.careers-body .wrapper .col__subtext {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 300;
 }
 
-.catalog_block_equip {
-  background: rgba(0, 177, 162, 0.5);
+.careers-body .wrapper .col__img {
+  width: 450px;
+  height: 500px;
+  background: url("../img/hands2-min.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.catalog_block__header {
-  margin: 1em 0;
-  font-size: 6.5em;
-  font-weight: 800;
-  text-transform: uppercase;
+.careers-body .right-col {
+  margin-top: 5em;
+}
+
+.careers-body .right-col .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.careers-body .right-col .block {
+  width: 28%;
+}
+
+.careers-body .right-col .block__bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.101)), to(rgba(0, 0, 0, 0.574))), url("../img/hands2-min.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)), url("../img/hands2-min.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 18em;
+  padding-left: 1.5em;
+}
+
+.careers-body .right-col .block__bg-social {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.101)), to(rgba(0, 0, 0, 0.574))), url("../img/collective-min.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)), url("../img/collective-min.jpg");
+  background-position: center;
+}
+
+.careers-body .right-col .block__bg-people {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.101)), to(rgba(0, 0, 0, 0.574))), url("../img/main-block.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.101), rgba(0, 0, 0, 0.574)), url("../img/main-block.jpg");
+  background-position: center;
+}
+
+.careers-body .right-col .block__header {
+  font-size: 1.7em;
+  font-weight: 400;
   color: white;
 }
 
-.catalog_block__header span {
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+.careers-body .right-col .block-middle {
+  margin-top: 5em;
 }
 
-.catalog_block__front_image {
-  position: absolute;
-  width: 400px;
-  right: 425px;
-  top: 150px;
-  opacity: 90%;
+.careers-body .right-col .block__arrow {
+  margin-left: 75%;
+  width: 70px;
 }
 
-.catalog_block__front_image_nvd {
-  width: 600px;
-  right: 300px;
+.careers-body .right-col .block__text {
+  background: rgba(235, 235, 235, 0.261);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
-.catalog_block__front_image_pmt {
-  width: 400px;
+.careers-body .right-col .block__text__text {
+  font-weight: 300;
 }
 
-.catalog_block__front_image_equip {
-  width: 550px;
-  right: 300px;
+section.items {
+  background-color: rgba(145, 145, 145, 0.042);
+}
+
+section.items .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 5em 0;
+}
+
+section.items .wrapper .left-col {
+  width: 50%;
+  padding-right: 8em;
+}
+
+section.items .wrapper .left-col p {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+section.items .wrapper .right-col {
+  width: 50%;
+  border-left: 1px solid rgba(128, 128, 128, 0.1);
+  padding-left: 4em;
+}
+
+section.items .wrapper .right-col__text-block {
+  padding-bottom: 2em;
+}
+
+section.items .wrapper p.right-col__header {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #013601;
+}
+
+section.items .wrapper p.right-col__text {
+  font-weight: 300;
+}
+
+section.vacancies {
+  padding: 6em 0;
+}
+
+section.vacancies .vacancies__header {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+section.vacancies .vacancies__subheader {
+  margin: 0.5em 0;
+}
+
+section.vacancies .vacancies__header-block {
+  border-bottom: 1px solid rgba(0, 128, 0, 0.371);
+}
+
+section.vacancies .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.vacancies .vacancy__block {
+  width: 50%;
+  padding-right: 7em;
+  padding-top: 3em;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.331);
+  padding-left: 2em;
+  padding-bottom: 3em;
+}
+
+section.vacancies .vacancy__block:hover {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.9);
+  background: rgba(128, 128, 128, 0.15);
+}
+
+section.vacancies .vacancy-block__header {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+section.vacancies .vacancy-block__text {
+  font-weight: 300;
+}
+
+section.vacancies .btn {
+  text-transform: uppercase;
 }
 
 footer {
@@ -352,4 +482,4 @@ footer .wrapper .address .text {
 footer .contact-body {
   padding: 5em 0;
 }
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=careers.css.map */

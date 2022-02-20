@@ -205,72 +205,89 @@ section.home-screen {
     }
 }
 
-// Разделы в большом меню
+section.contacts-body {
+    .wrapper {
+        display: flex;
+    }
 
-.catalog_block_wrapper {
-    position: relative;
-    padding: 4em 0;
-   // margin: 4em 0;
-}
+    .left-col {
+        width: 50%;
+    }
 
-.catalog_block__counter {
-    position: absolute;
-    margin: 0;
-    font-size: 18em;
-    right: 0;
-    color: rgba(68, 68, 68, 0.2);
-}
+    .right-col {
+        width: 50%;
+        height: 100%;
+        padding-top: 0.5em;
 
-.catalog_block_tube {
-    background:rgba(0, 163, 98, 0.5);
-}
+        iframe {
+            width: 100%;
+            height: 45em;
+        }
+    }
 
-.catalog_block_nvd {
-    background: rgba(73, 2, 15, 0.5);
-}
+    .contacts-body__header {
+        font-size: 2.5em;
+        margin-bottom: 0;
+        color:rgb(1, 54, 1);
+    }
 
-.catalog_block_pmt {
-    background: rgba(2, 69, 192, 0.5);
-}
+    .contacts-body__subheader {
+        font-size: 1.5em;
+    }
 
-.catalog_block_equip {
-    background: rgba(0, 177, 162, 0.5);
-}
+    .contact-block__header {
+        font-size: 2em;
+        font-weight: 400;
+        display: inline-block;
+        padding-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
 
-.catalog_block__header {
-    margin: 1em 0;
-    font-size: 6.5em;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: white;
-
-    span {
-        color: transparent;
-        -webkit-text-stroke: 1px white;
+    .contact-block__icon {
+        display: inline;
     }
 }
 
-.catalog_block__front_image {
-    position: absolute;
-    width: 400px;
-    right: 425px;
-    top: 150px;
-    opacity: 90%;
+
+.map {
+
+    padding-top: 7em;
+    padding-bottom: 4em;
+
+    .map__wrapper {
+        display: flex;
+    }
+
+    .left-col {
+        width: 70%;
+        background: url('../img/world-map-png-35426.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    .right-col {
+        width: 30%;
+        padding-left: 4em;
+    }
+
+    .map__header {
+        font-size: 5em;
+        color:rgb(1, 54, 1);
+    }
+
+    .map__text {
+        font-size: 1.3em;
+    }
+
+    .map__btn {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
 }
 
-.catalog_block__front_image_nvd {
-    width: 600px;
-    right: 300px;
-}
-
-.catalog_block__front_image_pmt {
-    width: 400px;
-}
-
-.catalog_block__front_image_equip {
-    width: 550px;
-    right: 300px;
-}
 
 
 footer {
